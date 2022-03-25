@@ -25,6 +25,6 @@ func UpdateEmployee(c *gin.Context) {
 		return
 	}
 	employee.ID = idParam
-	c.JSON(200, employee)
+	c.JSON(200, "Employee updated")
 
 }

@@ -22,7 +22,7 @@ func DeleteEmployee(c *gin.Context) {
 		c.JSON(400, gin.H{"error": err.Error()})
 		return
 	}
-	c.JSON(200, gin.H{"id": idParam, "status": "deleted"})
+	c.JSON(200, gin.H{"id": idParam, "status": "Deleted"})
 
 }
 

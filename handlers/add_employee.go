@@ -26,6 +26,6 @@ func AddEmployee(c *gin.Context) {
 		c.JSON(400, gin.H{"error": err.Error()})
 		return
 	}
-	c.JSON(200, employee)
+	c.JSON(200, "Employee added")
 
 }
